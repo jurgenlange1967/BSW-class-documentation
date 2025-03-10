@@ -270,4 +270,4 @@ The ``error_ellipses()`` method can be called after the :ref:`fit() <fitting-sec
    :param multiples_plot: this paramter indicates how the plotting will be performed. When **False** indicates one plot window for each parameter pair. Otherwise, all error ellipses for each parameter combination (e.g. :math:`\beta_{1} - \beta_{2}`, :math:`\beta_{1} - \beta_{4}`, :math:`\beta_{1} - \beta_{5}`, :math:`\beta_{1} - \beta_{6}`) will be printed in a single window. 
    :type showErr: boolean
 
-The error ellipses between two parameters calculated by this class is directly related to characteristic of variance-covariance matrix (or :ref:`parametric correlation <Condition number and parmcorrmatrix>` ) of parameters. 
+The error ellipses between two parameters calculated by this class is directly related to characteristic of variance-covariance matrix (or :ref:`parametric correlation <Condition number and parmcorrmatrix>` ) of parameters. The amount of correlation can be interpreted by how thin the ellipse. That is, thinner ellipses, the parameters are more correlated
