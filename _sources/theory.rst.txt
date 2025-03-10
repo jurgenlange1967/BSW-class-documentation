@@ -65,7 +65,7 @@ with a confidence level equal to 95%. The mean prediction values ​​of the mo
 
 .. _Estimation CI:
 
-Estimation of confidence intervals for the parameters
+Estimation of the confidence intervals for parameters
 ------------------------------------------------------
 The confidence interval for each parameter estimated by the model is calculated from the square root of two diagonal elements of the symmetric variance-covariance matrix :math:`V^{\hat{\beta}}` (:numref:`figura6`) . 
 
@@ -147,7 +147,7 @@ with :math:`N` = sample size and :math:`k` = number of parameters
 Condition number and the parametric correlation matrix
 -------------------------------------------------------
 
-The estimation of the condition number (:math:`\kappa`) of the matrix :math:`V^{\hat{\beta}}` (:numref:`figura6`) can indicate whether there is too much dependence between the parameters in the model, and whether the number of parameters needs to be reduced in the model. For example, a high :math:`\kappa` value 
+The estimation of the condition number (:math:`\kappa`) of the matrix :math:`V^{\hat{\beta}}` (:numref:`figura5`) can indicate whether there is too much dependence between the parameters in the model, and whether the number of parameters needs to be reduced in the model. For example, a high :math:`\kappa` value 
 indicates that we should be concerned about redundant or correlated parameters, which can cause unreliable covariance matrices and confidence intervals, and in some cases, poor quality fits. Another fact is that the higher the :math:`\kappa`, the closer the variance-covariance matrix of the parameters is to the 
 singularity (or determinant equal to zero), making its inversion process impossible. In general, the lower :math:`\kappa` value, the smaller the confidence interval values :math:`\mathrm{CI}` for estimated parameters.
 The calculation of :math:`\kappa` can be performed using the **linalg.cond** function from the **numpy** Python module. Mathematically, :math:`\kappa` is calculated as follows:

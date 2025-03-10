@@ -517,7 +517,15 @@ The <code class="docutils literal notranslate"><span class="pre">error_ellipses(
 </dl>
 </dd></dl>
 
-<p>The error ellipses between two parameters calculated by this class is directly related to characteristic of variance-covariance matrix (or <a class="reference internal" href="theory.html#condition-number-and-parmcorrmatrix"><span class="std std-ref">parametric correlation</span></a> ) of parameters. The amount of correlation can be interpreted by how thin the ellipse. That is, thinner ellipses, the parameters are more correlated</p>
+<p>The error ellipses between two parameters calculated by this class is directly related to characteristic of variance-covariance matrix (or <a class="reference internal" href="theory.html#condition-number-and-parmcorrmatrix"><span class="std std-ref">parametric correlation</span></a> ) of parameters. The amount of correlation can be interpreted by how thin the ellipse. That is, thinner ellipses, the parameters are more correlated. For example, from (<a class="reference internal" href="#figura7"><span class="std std-numref">Fig. 6</span></a>)
+can be observed that the ellipse in <strong>(b)</strong> <span class="math notranslate nohighlight">\(\beta_{4} - \beta_{5}\)</span> is thinner than in <strong>(a)</strong> <span class="math notranslate nohighlight">\(\beta_{1} - \beta_{4}\)</span> caused by higher off-diagonal elements values of covariance matrix between parameters <span class="math notranslate nohighlight">\(\beta_{4}\)</span> and <span class="math notranslate nohighlight">\(\beta_{5}\)</span>. In fact, the parametric correlation between <span class="math notranslate nohighlight">\(\beta_{4}\)</span> and <span class="math notranslate nohighlight">\(\beta_{5}\)</span> is higher (-0.999) than that between <span class="math notranslate nohighlight">\(\beta_{1}\)</span> and <span class="math notranslate nohighlight">\(\beta_{4}\)</span> (-0.79).
+From a physical point of view, this fact reveals that the liquid inlet flow rate (<span class="math notranslate nohighlight">\(Q_{L}\)</span>) is very correlated with (<span class="math notranslate nohighlight">\(K_{p}\)</span>) or viscosity of emulsions into electrocoalescer. On the other hand, it appears that <span class="math notranslate nohighlight">\(T\)</span> is less correlated with <span class="math notranslate nohighlight">\(Q_{L}\)</span>.</p>
+<figure class="align-default" id="id6">
+<span id="figura7"></span><img alt="_images/figura7.jpg" src="_images/figura7.jpg" />
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Error ellipses between two parameter pairs and covariance matrix between them. <strong>(a)</strong> <span class="math notranslate nohighlight">\(\beta_{1}\)</span> and <span class="math notranslate nohighlight">\(\beta_{4}\)</span> <strong>(b)</strong> <span class="math notranslate nohighlight">\(\beta_{4} - \beta_{5}\)</span>. The <a class="reference internal" href="theory.html#condition-number-and-parmcorrmatrix"><span class="std std-ref">parametric correlation</span></a> is shown for each error ellipse</span><a class="headerlink" href="#id6" title="Link to this image">¶</a></p>
+</figcaption>
+</figure>
 </section>
 </section>
 

@@ -270,4 +270,12 @@ The ``error_ellipses()`` method can be called after the :ref:`fit() <fitting-sec
    :param multiples_plot: this paramter indicates how the plotting will be performed. When **False** indicates one plot window for each parameter pair. Otherwise, all error ellipses for each parameter combination (e.g. :math:`\beta_{1} - \beta_{2}`, :math:`\beta_{1} - \beta_{4}`, :math:`\beta_{1} - \beta_{5}`, :math:`\beta_{1} - \beta_{6}`) will be printed in a single window. 
    :type showErr: boolean
 
-The error ellipses between two parameters calculated by this class is directly related to characteristic of variance-covariance matrix (or :ref:`parametric correlation <Condition number and parmcorrmatrix>` ) of parameters. The amount of correlation can be interpreted by how thin the ellipse. That is, thinner ellipses, the parameters are more correlated
+The error ellipses between two parameters calculated by this class is directly related to characteristic of variance-covariance matrix (or :ref:`parametric correlation <Condition number and parmcorrmatrix>` ) of parameters. The amount of correlation can be interpreted by how thin the ellipse. That is, thinner ellipses, the parameters are more correlated. For example, from (:numref:`figura7`)
+can be observed that the ellipse in **(b)** :math:`\beta_{4} - \beta_{5}` is thinner than in **(a)** :math:`\beta_{1} - \beta_{4}` caused by higher off-diagonal elements values of covariance matrix between parameters :math:`\beta_{4}` and :math:`\beta_{5}`. In fact, the parametric correlation between :math:`\beta_{4}` and :math:`\beta_{5}` is higher (-0.999) than that between :math:`\beta_{1}` and :math:`\beta_{4}` (-0.79).
+From a physical point of view, this fact reveals that the liquid inlet flow rate (:math:`Q_{L}`) is very correlated with (:math:`K_{p}`) or viscosity of emulsions into electrocoalescer. On the other hand, it appears that :math:`T` is less correlated with :math:`Q_{L}`.
+
+.. _figura7:
+
+.. figure:: ./figura7.jpg
+
+   Error ellipses between two parameter pairs and covariance matrix between them. **(a)** :math:`\beta_{1}` and :math:`\beta_{4}` **(b)** :math:`\beta_{4} - \beta_{5}`. The :ref:`parametric correlation  <Condition number and parmcorrmatrix>` is shown for each error ellipse
